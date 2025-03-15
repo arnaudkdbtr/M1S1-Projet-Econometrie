@@ -1,1 +1,57 @@
-# M1S1-Projet-Econometrie
+# Analyse des Déterminants Macroéconomiques du Déficit Public en France
+
+## 📌 Présentation du Projet
+
+Ce projet vise à analyser les principaux déterminants macroéconomiques influençant le déficit public en France au cours des 20 dernières années. En utilisant des données issues d’**Eurostat**, nous explorons l’impact de variables économiques telles que le taux de chômage, le taux d’épargne des ménages, le taux d’inflation, le taux de change effectif, les recettes fiscales nettes et le PIB sur l’évolution du déficit public.
+
+L’objectif est d’apporter des éléments d’analyse pouvant éclairer les décisions de politique économique en matière de gestion budgétaire.
+
+## 📊 Jeu de Données
+
+Les données utilisées proviennent de **Eurostat** et couvrent la période **2003-2023**.  
+### Principales variables :
+- `Government.surplus.or.deficit` : Déficit/excédent public (% du PIB)
+- `NetTaxReceipts` : Recettes fiscales nettes (% du PIB)
+- `Unemployment.Rate` : Taux de chômage (en %)
+- `Household.saving.rate` : Taux d’épargne des ménages (en %)
+- `InflationRate` : Taux d’inflation (IPC, en %)
+- `effective.exchange.rate` : Taux de change effectif des pays industrialisés
+- `GDP` : Croissance du PIB (en %)
+
+## 🏗 Méthodologie
+
+Nous utilisons un **modèle de régression linéaire multiple** pour estimer l’influence des différentes variables sur le déficit public.
+
+### Spécification du modèle :
+
+\[
+Government.surplus.or.deficit = \beta_0 + \beta_1 Unemployment.Rate + \beta_2 Household.saving.rate + \beta_3 effective.exchange.rate + \beta_4 NetTaxReceipts + \beta_5 GDP + \beta_6 InflationRate + u_t
+\]
+
+### Principaux Résultats :
+- **Le taux de chômage et le taux d’épargne des ménages ont un impact négatif et significatif** sur le déficit public.
+- **Les recettes fiscales nettes et le taux de change effectif réduisent le déficit**, indiquant leur importance dans l’équilibre budgétaire.
+- **Le PIB a un effet positif modéré**, tandis que l’inflation n’a pas d’effet significatif sur le déficit public.
+
+### Choix du Modèle :
+- **Test de multicolinéarité (VIF)** : Pas de problème majeur détecté.
+- **Test de Breusch-Pagan** : Pas d’hétéroscédasticité significative.
+- **Test RESET de Ramsey** : Pas de problème de spécification du modèle.
+- **Test de Durbin-Watson** : Pas d’autocorrélation des résidus.
+- **Test de Shapiro-Wilk** : Normalité des résidus validée.
+
+## ⚙️ Implémentation
+
+L’analyse est réalisée sous **R**, en utilisant les packages suivants :
+- `ggplot2` (visualisation des tendances)
+- `lmtest` (tests statistiques)
+- `car` (analyse de la multicolinéarité)
+- `stargazer` (génération de tableaux)
+
+## Auteurs
+
+- ZELLER Emile
+- HOBBALLAH Rayan
+- Arnaud KINDBEITER
+
+
