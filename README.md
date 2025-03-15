@@ -24,9 +24,7 @@ Nous utilisons un **modèle de régression linéaire multiple** pour estimer l�
 
 ### Spécification du modèle :
 
-\[
-Government.surplus.or.deficit = \beta_0 + \beta_1 Unemployment.Rate + \beta_2 Household.saving.rate + \beta_3 effective.exchange.rate + \beta_4 NetTaxReceipts + \beta_5 GDP + \beta_6 InflationRate + u_t
-\]
+Government.surplus.or.deficit = β₀ + β₁ Unemployment.Rate + β₂ Household.saving.rate + β₃ effective.exchange.rate + β₄ NetTaxReceipts + β₅ GDP + β₆ InflationRate + u_t
 
 ### Principaux Résultats :
 - **Le taux de chômage et le taux d’épargne des ménages ont un impact négatif et significatif** sur le déficit public.
@@ -48,10 +46,16 @@ L’analyse est réalisée sous **R**, en utilisant les packages suivants :
 - `car` (analyse de la multicolinéarité)
 - `stargazer` (génération de tableaux)
 
+## 📂 Accédez aux fichiers
+
+- [Dossier PDF final du projet](Dossier-PDF-Markdown.pdf)  
+  Ce lien vous redirigera vers le document PDF détaillant les résultats finaux du projet.
+  
+- [Code R utilisé dans l’analyse](R-Code)  
+  Vous pouvez explorer le code source du projet dans ce dossier pour plus de détails sur l'implémentation.
+
 ## Auteurs
 
 - ZELLER Emile
 - HOBBALLAH Rayan
 - Arnaud KINDBEITER
-
-
