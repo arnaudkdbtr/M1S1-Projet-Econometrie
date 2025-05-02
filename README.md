@@ -1,3 +1,9 @@
+![R Version](https://img.shields.io/badge/R-4.0%2B-blue)
+![Data Source](https://img.shields.io/badge/Source-Eurostat-brightgreen)
+![Country](https://img.shields.io/badge/Pays-France-red)
+![Method](https://img.shields.io/badge/M%C3%A9thode-R%C3%A9gression%20Lin%C3%A9aire-orange)
+![Focus](https://img.shields.io/badge/Focus-D%C3%A9ficit%20Public-blueviolet)
+
 # Analyse des Déterminants Macroéconomiques du Déficit Public en France
 
 ## 📌 Présentation du Projet
